@@ -1,3 +1,18 @@
+// Script for firstcode.html
+const loginForm = document.getElementById('loginForm');
+
+loginForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+    login();
+});
+
+function login() {
+    // Perform login validation (you can use AJAX to validate credentials)
+    // For simplicity, let's assume the login is successful
+    window.location.href = "afterlogin.html"; // Redirect to afterlogin.html
+}
+
+// Script for afterlogin.html
 const weatherForm = document.getElementById('weatherForm');
 const locationInput = document.getElementById('locationInput');
 const weatherInfo = document.getElementById('weatherInfo');
